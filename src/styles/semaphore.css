@@ -1,0 +1,58 @@
+@font-face {
+    font-family: times-sqare;
+    src: url('./fonts/Times_Square/TIMES_SQ.TTF');
+}
+.semaphore {
+    border: solid greenyellow 2px;
+    width: auto;
+    margin: 10px;
+    height: auto;
+    background-color: black;
+    border-radius: 20px;
+    float: left;
+}
+
+.container {
+    border: solid blue 2px;
+    margin: auto;
+    display: inline-block;
+}
+
+.color {
+    width: 100px;
+    margin: 10px;
+    height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    font-family: times-sqare, Serif;
+    line-height: 95px;
+}
+
+.green {
+    background-color: #005000;
+}
+
+.yellow {
+    background-color: #505000;
+}
+
+.red {
+    background-color: #500000;
+}
+
+.red.on {
+    background-color: #ff0000;
+}
+
+.yellow.on {
+    background-color: #ffff00;
+}
+
+.green.on {
+    background-color: #00ff00;
+}
