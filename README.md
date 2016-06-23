@@ -16,6 +16,6 @@
   
 
 
-##But it's easyer to preview it [here](https://rawgit.com/happyHooman/Traffic-Lights/master/src/index.html) ;)
+##But it's easier to preview it [here](https://rawgit.com/happyHooman/Traffic-Lights/master/src/index.html) ;)
 
 ###Or you can download the project and open index.html with your browser from /src/
