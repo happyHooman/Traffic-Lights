@@ -17,7 +17,7 @@ export default class Led extends React.Component {
             if (oldCounter > 0) {
                 me.setState({counter: oldCounter - 1});
             }
-            if (oldCounter <= 1) {
+            else {
                 clearInterval(timer);
                 me.setState({turnedOn: false});
                 if (me.props.whenReady) {
@@ -31,6 +31,7 @@ export default class Led extends React.Component {
         var lit = 'color ' + this.props.color + (this.state.turnedOn ? ' on' : ''),
             counter = this.state.counter;
         counter = counter ? (counter < 10 ? '0' + counter : counter) : '';
+        if(this.props.color == "yellow") counter = '';
         return (
             <div class={lit}>{counter}</div>
         );
