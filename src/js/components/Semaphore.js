@@ -27,7 +27,7 @@ export default class Semaphore extends React.Component {
         }
     }
     render() {
-        var style = {marginLeft: "43px", backgroundColor: "cyan", color: "blue"};
+        var style = {marginLeft: "42px", backgroundColor: "cyan", color: "blue"};
         var btnText = this.state.turnedOn ? "Stop" : "Start";
         return (
             <div class="semaphore" >
@@ -51,3 +51,5 @@ export default class Semaphore extends React.Component {
         );
     }
 }
+
+//TODO nameplates for each semaphore and a dashboard for switching each of them
