@@ -4,7 +4,7 @@ var path = require('path');
 
 module.exports = {
     context: path.join(__dirname, "src"),
-    devtool: debug ? "inline-sourcemap" : null,
+    devtool: debug ? "cheap-module-source-map" : null,
     entry: "./js/client.js",
     module: {
         loaders: [
