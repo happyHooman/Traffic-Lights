@@ -4,7 +4,7 @@ var path = require('path');
 
 module.exports = {
     context: path.join(__dirname, "src"),
-    devtool: debug ? "cheap-module-source-map" : null,
+    devtool: debug ? "eval" : null,
     entry: "./js/client.js",
     module: {
         loaders: [
@@ -21,8 +21,7 @@ module.exports = {
     },
     output: {
         path: __dirname + "/src/",
-        filename: "bundle.js",
-        publicPath: '/static/'
+        filename: "bundle.js"
     },
     plugins: debug ? [] : [
         new webpack.optimize.DedupePlugin(),

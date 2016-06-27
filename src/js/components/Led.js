@@ -12,15 +12,20 @@ export default class Led extends React.Component {
     countdown(counter) {
         this.setState({turnedOn: true, counter: counter});
         var me = this;
+        var color = this.props.color;
         var timer = setInterval(function () {
             var oldCounter = me.state.counter;
-            if (oldCounter > 0) {
+            if (oldCounter > 1 && me.props.toggle == true) {
                 me.setState({counter: oldCounter - 1});
+                if(color == "red" && me.state.counter==3){
+                    me.props.whenReady();
+                }
             }
             else {
                 clearInterval(timer);
+                me.state.counter=0;
                 me.setState({turnedOn: false});
-                if (me.props.whenReady) {
+                if (me.props.whenReady && color != "red") {
                     me.props.whenReady();
                 }
             }
